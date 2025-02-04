@@ -20,7 +20,7 @@ class PositonalEncoding(nn.Module):
     def __init__(self,d_model:int, seq_len:int, dropout:float)->None:
         super().__init__()
         self.d_model = d_model
-        self.deq_len = seq_len
+        self.seq_len = seq_len
         self.dropout = nn.Dropout(dropout)
 
         #Create a matrix of shape(seq_len,d_model)
